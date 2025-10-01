@@ -1,3 +1,4 @@
+import java.awt.Point;
 
 public class Lab1_12 {
     public static void main(String[] args) {
@@ -10,13 +11,20 @@ public class Lab1_12 {
     // 1. Create Point (5,10) and return coordinates
     public static String q1() {
         // TODO
-        return "";
+        Point p1 = new Point(5, 10);
+        String result = "X cordinate is: " + p1.getX() + ", " + "Y cordinate is: " + p1.getY();
+        return result;
     }
 
     // 2. Move a Point (0,0) to (4,7) and return coordinates
     public static String q2() {
         // TODO
-        return "";
+        Point p2 = new Point(0, 0);
+        String current = "Current position is: " + p2.getX() + ", " + p2.getY();
+        String result = "New position is: " + p2.move(0, 0);
+        // String newP2 = "Current position is: " + p2 + ", " + "New position is; " + p2.move(4, 7);
+
+        return result;
     }
 
     // 3. Find distance between (0,0) and (3,4)
