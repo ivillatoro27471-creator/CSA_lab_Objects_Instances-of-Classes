@@ -19,23 +19,32 @@ public class Lab1_12 {
     // 2. Move a Point (0,0) to (4,7) and return coordinates
     public static String q2() {
         // TODO
-        Point p2 = new Point(0, 0);
-        String current = "Current position is: " + p2.getX() + ", " + p2.getY();
-        String result = "New position is: " + p2.move(0, 0);
+        Point p1 = new Point(0, 0);
+        p1.move(4, 7);
+        String result = "New position is: " + p1.getX() + ", " + p1.getY();
         // String newP2 = "Current position is: " + p2 + ", " + "New position is; " + p2.move(4, 7);
 
         return result;
     }
 
     // 3. Find distance between (0,0) and (3,4)
-    public static double q3() {
+    public static String q3() {
         // TODO
-        return 0.0;
+        Point p1 = new Point(0, 0);
+        Point p2 = new Point(3, 4);
+        String result = "Your distance is: " + p1.distance(p2);
+
+        return result;
     }
 
     // 4. Show that two Points with same values are different objects
     public static String q4() {
         // TODO
-        return "";
+        Point p1 = new Point(2, 2);
+        Point p2 = new Point(2, 2);
+        Boolean result = p1 == p2;
+        Boolean result2 = p1.equals(p2);
+        
+        return "Different Object: " + result +", " + "Values match: " + result2;
     }
 }
